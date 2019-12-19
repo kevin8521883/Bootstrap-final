@@ -29,7 +29,7 @@ $(document).ready(function () {
                 form.classList.add('was-validated');
             }, false);
 
-            // 讓下一頁 a 連結同時有檢查表單的功能
+            //a連結驗證功能
             var submitLink = document.querySelector('.sub-link');
             submitLink.addEventListener('click', function (event) {    
                 if (form.checkValidity() === false) {
