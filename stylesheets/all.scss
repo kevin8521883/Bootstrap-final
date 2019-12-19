@@ -1,0 +1,234 @@
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "helpers/variables";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+//-------index-----------//
+.header-banner{
+    height: 500px;
+}
+.bg-cover{
+    background-size: cover;
+    background-position: center center;
+}
+.header-menu{
+    margin-top: -90px;
+    font-size: 24px;
+    letter-spacing: 0.25rem;
+    cursor: pointer;
+    a{
+        color: rgba(207,115,64, 0.8);
+        text-decoration: none;
+        .header-menu-bg{
+            backdrop-filter: blur(5px);
+            height: 256px;
+            background-color:rgba(255,255,64, 0.8) ;
+            transition: all 1s;
+        }
+        .active{
+            backdrop-filter: blur(0px);
+            background-color:rgba(207,115,64, 0.8) ;
+            color:white;
+    }
+    
+}
+    a:hover{
+        .header-menu-bg{
+            backdrop-filter: blur(0px);
+            background-color:rgba(207,115,64, 0.8) ;
+            color:white;
+        }
+    }
+}
+.banner-text{
+    height: 17.5rem;
+    writing-mode: vertical-rl;
+    letter-spacing: 0.5rem;
+}
+.word-colum{
+    writing-mode: vertical-rl;
+}
+.banner-img{
+    height: 100%;
+}
+.text-title{
+    font-weight: bold;
+    letter-spacing: 0.25rem;
+    margin-top: -20px;
+}
+.item-box-img{
+    height: 15rem;
+    width: 100%;
+}
+.item-box{
+    position: relative;
+    .item-tag{
+        position: absolute;
+        writing-mode: vertical-rl;
+        top: 0px;
+        left: 20px;
+        font-weight: bold;
+        letter-spacing: 0.5rem;
+        background-color: rgba(207,115,64,1);
+    }
+    .item-tag-hot{
+        position: absolute;
+        writing-mode: vertical-rl;
+        top: 0px;
+        left: 20px;
+        font-weight: bold;
+        letter-spacing: 0.5rem;
+        background-color:red;
+    }
+    .item-tag-new{
+        position: absolute;
+        writing-mode: vertical-rl;
+        top: 0px;
+        left: 20px;
+        font-weight: bold;
+        letter-spacing: 0.5rem;
+        background-color:greenyellow;
+    }
+}
+.item-favorite{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: red;
+    cursor: pointer;
+}
+//--------product----------//
+.list-group-item-action{
+    transition: all.5s;
+}
+
+//--------cart------------//
+.cart-item{ 
+    .cart-img{
+        height: 100px;
+        width: 100%;
+    }
+    .cart-border{
+        border: none;
+    }
+}
+//--------checkout--------//
+.form-control-input{
+    height: 3.5rem;
+    padding-left: 20px;
+    font-size: 1.25rem;
+}
+.progress-steps{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .progress-item{
+        position: relative;
+        width: 20px;
+        height: 20px;
+        border: 2px white solid;
+        background-color: rgba(207,115,64,1) ;
+        border-radius: 50%;
+        z-index: 1;
+    }
+}
+.progress-steps::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: #eaf0ed;
+    top: 50%;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+.progress-steps .progress-item.active:after {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    background-color: #eaf0ed;
+}
+.progress-steps .progress-item.finish:after {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    top: -2px;
+    left: -2px;
+    border-radius: 50%;
+    background-color: #eaf0ed;
+    z-index: -1;
+}
+.fa-check{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+//----success---//
+
+.progress-steps-dark{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .progress-item{
+        position: relative;
+        width: 20px;
+        height: 20px;
+        border: 2px white solid;
+        background-color: rgba(207,115,64,1) ;
+        border-radius: 50%;
+        z-index: 1;
+    }
+}
+.progress-steps-dark::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: rgba(207,115,64,1);
+    top: 50%;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+.progress-steps-dark .progress-item.finish:after {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    top: -2px;
+    left: -2px;
+    border-radius: 50%;
+    background-color: rgba(207,115,64,1);
+    z-index: -1;
+}
+@media(max-width:992px){
+    .banner-text{
+        height: 17.5rem;
+        writing-mode: horizontal-tb;
+    }
+}
+@media (max-width:768px) {
+    .banner-img{
+        height: 300px;
+    }
+    .header-banner{
+        height: 400px;
+    }
+    .header-menu{
+        margin-top: 0px;
+    }
+    .cart-item{
+        .cart-border{
+            border-top: 1px rgba(0, 0, 0, 0.125) solid;
+            border-bottom: 1px rgba(0, 0, 0, 0.125) solid;
+        }
+    }
+    
+}
