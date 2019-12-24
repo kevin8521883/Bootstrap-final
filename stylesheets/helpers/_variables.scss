@@ -80,10 +80,9 @@ $theme-colors: () !default;
 $theme-colors: map-merge(
   (
     "primary":    rgba(207,115,64,1) ,//$primary,
-    "text-color": rgba(207,115,64,0.8) ,
-    
-    "accent":     rgba(255,255,64, 0.8),
-    "secondary":  $secondary,
+    "text-color": #5D675B,//rgba(207,115,64,0.8) ,
+    "secondary":  #F7EF99,//$secondary,
+    "accent":     #ABE188,
     "success":    $success,
     "info":       $info,
     "warning":    $warning,

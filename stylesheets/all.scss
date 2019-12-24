@@ -11,6 +11,15 @@
     background-size: cover;
     background-position: center center;
 }
+.mobile-cart{
+    color: rgba(207,115,64,0.8);
+}
+.carts-input-group{
+    width: 150px !important;
+    button{
+        width: 44px !important;
+    }
+}
 .header-menu{
     margin-top: -90px;
     font-size: 24px;
@@ -22,7 +31,7 @@
         .header-menu-bg{
             backdrop-filter: blur(5px);
             height: 256px;
-            background-color:rgba(255,255,64, 0.8) ;
+            background-color:#F7EF99;//rgba(255,255,64, 0.8) ;
             transition: all 1s;
         }
         .active{
@@ -90,11 +99,16 @@
         background-color:greenyellow;
     }
 }
+.item-box-name{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 1.25rem;
+}
 .item-favorite{
     position: absolute;
     top: 20px;
     right: 20px;
-    color: red;
+    color: rgba(207,115,64,1);
     cursor: pointer;
 }
 //--------product----------//
