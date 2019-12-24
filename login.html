@@ -11,7 +11,7 @@
     <meta property="og:description" content="亞弗雷麵包坊，剛出爐的新鮮麵包，最新的烘焙技術與百分百的天然酵母，健康美味一應俱全！" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://kevin8521883.github.io/Bootstrap-final/" />
-    <meta property="og:image" content="https://upload.cc/i1/2019/12/19/R7mTsE.png"/>
+    <meta property="og:image" content="https://upload.cc/i1/2019/12/19/R7mTsE.png" />
     <title>亞弗雷麵包坊 | 登入</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="stylesheets/all.css">
@@ -23,15 +23,16 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light sticky-top py-20 pt-lg-25 pb-lg-15 bg-white">
         <div class="container">
-            <button class="border-0 navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="border-0 navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a class="navbar-brand d-flex align-items-center" href="index.html">
                 <img class="d-none d-md-block" src="images/logo2.png" height="40" alt="">
                 <h1 class="text-primary ml-2 font-weight-bold" style="letter-spacing: 5px;"><em>亞弗雷</em></h1>
             </a>
-            <a href="cart.html" class="navbar-link d-lg-none text-text-color">
+            <a href="cart.html" class="navbar-link d-lg-none mobile-cart">
                 <i style="font-size:24px" class="fas fa-shopping-cart"></i>
             </a>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -58,12 +59,12 @@
     <section>
         <div class="container mt-0 mb-9 my-md-9">
             <div class="row justify-content-center">
-                <div class="col-md-10">
+                <div class="col-md-10 px-0 px-md-3">
                     <div class="row no-gutters">
-                        <div class="col-md-6 border border-text-color no-gutters">
-                            <div class="h2 text-white text-center m-0 p-30 bg-text-color">會員登入</div>
+                        <div class="col-md-6 border border-text-color ">
+                            <div class="h2 text-white text-center m-0 p-30 bg-primary">會員登入</div>
                             <!-- 手機板社群快速登入 -->
-                            <div class="row p-3 no-gutters  d-md-none" style="background-color: #eaf0ed;">
+                            <div class="row p-3 no-gutters d-md-none bg-secondary">
                                 <div class="col-4"><a href="#" class="h-100 btn btn-light d-block">
                                         <img src="https://sdsg5bpnl.github.io/Sweetaste/images/ic-facebook-logotype.svg"
                                             alt="">
@@ -82,7 +83,9 @@
                                 <div class="form-group">
                                     <div class="input-group">
                                         <div class="input-group-prepend">
-                                            <i class="input-group-text bg-light text-text-color fas fa-user px-3"></i>
+                                            <div class="input-group-text bg-light text-text-color px-3">
+                                                <i class="fas fa-user"></i>
+                                            </div>
                                         </div>
                                         <input type="text" class="form-control p-4" name="username" id="username"
                                             placeholder="電子信箱/手機號碼" required>
@@ -92,7 +95,9 @@
                                 <div class="form-group">
                                     <div class="input-group">
                                         <div class="input-group-prepend">
-                                            <i class="input-group-text bg-light text-text-color fas fa-user px-3"></i>
+                                            <div class="input-group-text bg-light text-text-color px-3">
+                                                <i class="fas fa-lock"></i>
+                                            </div>
                                         </div>
                                         <input type="password" class="form-control p-4" name="password" id="password"
                                             placeholder="請輸入使用者密碼" required>
@@ -105,12 +110,12 @@
                                     <input type="checkbox" class="form-check-input" name="remember" id="remember">
                                     <label for="remember" class="form-check-label">記住我</label>
                                 </div>
-                                <button class="form-control btn border-0 btn-accent">登入帳號</button>
+                                <a href="#" class="sub-link btn btn-primary btn-block p-3 text-white">登入帳號</a>
                             </form>
                         </div>
                         <!-- 電腦版社群快速登入 -->
-                        <div class="col-6 d-none d-md-block p-30 my-lg-3" style="background-color: #eaf0ed;">
-                            <div class="h2 text-center text-secondary">—— 連結社群帳號 ——</div>
+                        <div class="col-6 d-none d-md-block p-30 my-lg-3 bg-secondary">
+                            <div class="h2 text-center text-text-color">—— 連結社群帳號 ——</div>
                             <a href="#" class="btn btn-light d-block p-3 my-3 ">
                                 <img src="https://sdsg5bpnl.github.io/Sweetaste/images/ic-facebook-logotype.svg"
                                     width="100" height="30" alt="">
@@ -133,21 +138,21 @@
     <!--　footer -->
     <footer>
         <!-- 信箱 -->
-        <div class="container-fluid bg-text-color">
+        <div class="container-fluid bg-primary">
             <div class="container ">
                 <div class="row py-30">
                     <div class="col-md-6 pb-30 pb-md-0 d-flex align-items-center justify-content-center">
                         <img class="img-fluid" src="images/logo.png" width="50" alt="">
                         <h4 class="text-white">訂閱你我的香噴噴郵件</h4>
                     </div>
-                    <div class="col-md-6  text-center">
+                    <div class="col-md-6 text-center">
                         <div class="input-group">
                             <div class="input-group-prepend">
                                 <i class="input-group-text bg-white text-text-color border-0 fas fa-envelope px-3"></i>
                             </div>
                             <input type="email" class="form-control border-0 p-4" required>
                             <div class="input-group-append">
-                                <a href="#" class="input-group-text border-0 btn px-3 bg-accent">
+                                <a href="#" class="input-group-text bg-accent border-0 btn px-3">
                                     <i class=" fas fa-arrow-right"></i></a>
                             </div>
                         </div>
@@ -156,31 +161,33 @@
             </div>
         </div>
         <!-- 表尾 -->
-        <div class="container-fluid bg-light">
+        <div class="container-fluid bg-secondary">
             <div class="container py-30">
                 <div class="row ">
                     <div class="col-md-6 d-flex flex-column justify-content-between">
-                        <h1 class="text-primary font-weight-bold">亞弗雷麵包坊</h1>
-                        <div class="text-primary">
+                        <h1 class="text-text-color font-weight-bold">亞弗雷麵包坊</h1>
+                        <div class="text-text-color">
                             04-1234-567 <br>
                             aexck8836660@gmail.com <br>
                             500彰化縣彰化市溫泉路31號 <br>
                         </div>
                     </div>
                     <div class="col-md-6 d-flex justify-content-end ">
-                        <h4 class="m-0 d-none d-md-block word-colum text-primary font-weight-bold"
+                        <h4 class="m-0 d-none d-md-block word-colum text-text-color font-weight-bold"
                             style="letter-spacing: 0.5rem;">
                             今天是個<br>
                             　吃麵包的好日子</h4>
                     </div>
                 </div>
                 <div class="row mt-3">
-                    <div class="col-md-6">
-                        <a href="#" style="font-size:32px;"><i class="fab fa-facebook-square"></i></a>
-                        <a href="#" style="font-size:32px;"><i class="fab fa-twitter-square"></i></a>
-                        <a href="#" style="font-size:32px;"><i class="fab fa-line"></i></a>
+                    <div class="col-md-6 ">
+                        <a href="#" class="text-text-color" style="font-size:32px;"><i
+                                class="fab fa-facebook-square"></i></a>
+                        <a href="#" class="text-text-color" style="font-size:32px;"><i
+                                class="fab fa-twitter-square"></i></a>
+                        <a href="#" class="text-text-color" style="font-size:32px;"><i class="fab fa-line"></i></a>
                     </div>
-                    <div class="col-md-6 d-flex align-items-center justify-content-md-end text-primary">
+                    <div class="col-md-6 d-flex align-items-center justify-content-md-end text-text-color">
                         © 2019 Bread All Rights Reserved
                     </div>
                 </div>
@@ -197,7 +204,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-        <script src="js/all.js"></script>
+    <script src="js/all.js"></script>
 </body>
 
 </html>
