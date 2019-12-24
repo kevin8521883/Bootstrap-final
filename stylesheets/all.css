@@ -13208,6 +13208,175 @@ a.text-accent:hover, a.text-accent:focus {
   }
 }
 
+.progress-steps {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.progress-steps .progress-item {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: 2px white solid;
+  background-color: #cf7340;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.progress-steps::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: #eaf0ed;
+  top: 50%;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+
+.progress-steps .progress-item.active:after {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  background-color: #eaf0ed;
+}
+
+.progress-steps .progress-item.finish:after {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  top: -2px;
+  left: -2px;
+  border-radius: 50%;
+  background-color: #eaf0ed;
+  z-index: -1;
+}
+
+.progress-steps-dark {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.progress-steps-dark .progress-item {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: 2px white solid;
+  background-color: #cf7340;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.progress-steps-dark::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: #cf7340;
+  top: 50%;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+
+.progress-steps-dark .progress-item.finish:after {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  top: -2px;
+  left: -2px;
+  border-radius: 50%;
+  background-color: #cf7340;
+  z-index: -1;
+}
+
+.fa-check {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.item-box {
+  position: relative;
+}
+
+.item-box .item-tag {
+  position: absolute;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  top: 0px;
+  left: 20px;
+  font-weight: bold;
+  letter-spacing: 0.5rem;
+  background-color: #cf7340;
+}
+
+.item-box .item-tag-hot {
+  position: absolute;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  top: 0px;
+  left: 20px;
+  font-weight: bold;
+  letter-spacing: 0.5rem;
+  background-color: red;
+}
+
+.item-box .item-tag-new {
+  position: absolute;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  top: 0px;
+  left: 20px;
+  font-weight: bold;
+  letter-spacing: 0.5rem;
+  background-color: greenyellow;
+}
+
+.item-box-name {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 1.25rem;
+}
+
+.item-favorite {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #cf7340;
+  cursor: pointer;
+}
+
+.item-box-img {
+  height: 15rem;
+  width: 100%;
+}
+
 .header-banner {
   height: 500px;
 }
@@ -13288,65 +13457,6 @@ a.text-accent:hover, a.text-accent:focus {
   margin-top: -20px;
 }
 
-.item-box-img {
-  height: 15rem;
-  width: 100%;
-}
-
-.item-box {
-  position: relative;
-}
-
-.item-box .item-tag {
-  position: absolute;
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-  top: 0px;
-  left: 20px;
-  font-weight: bold;
-  letter-spacing: 0.5rem;
-  background-color: #cf7340;
-}
-
-.item-box .item-tag-hot {
-  position: absolute;
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-  top: 0px;
-  left: 20px;
-  font-weight: bold;
-  letter-spacing: 0.5rem;
-  background-color: red;
-}
-
-.item-box .item-tag-new {
-  position: absolute;
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-  top: 0px;
-  left: 20px;
-  font-weight: bold;
-  letter-spacing: 0.5rem;
-  background-color: greenyellow;
-}
-
-.item-box-name {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  font-size: 1.25rem;
-}
-
-.item-favorite {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  color: #cf7340;
-  cursor: pointer;
-}
-
 .list-group-item-action {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -13365,116 +13475,6 @@ a.text-accent:hover, a.text-accent:focus {
   height: 3.5rem;
   padding-left: 20px;
   font-size: 1.25rem;
-}
-
-.progress-steps {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.progress-steps .progress-item {
-  position: relative;
-  width: 20px;
-  height: 20px;
-  border: 2px white solid;
-  background-color: #cf7340;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-.progress-steps::after {
-  content: "";
-  position: absolute;
-  height: 2px;
-  background-color: #eaf0ed;
-  top: 50%;
-  left: 0;
-  right: 0;
-  z-index: 0;
-}
-
-.progress-steps .progress-item.active:after {
-  position: absolute;
-  content: "";
-  height: 12px;
-  width: 12px;
-  top: 2px;
-  left: 2px;
-  border-radius: 50%;
-  background-color: #eaf0ed;
-}
-
-.progress-steps .progress-item.finish:after {
-  position: absolute;
-  content: "";
-  height: 20px;
-  width: 20px;
-  top: -2px;
-  left: -2px;
-  border-radius: 50%;
-  background-color: #eaf0ed;
-  z-index: -1;
-}
-
-.fa-check {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
-}
-
-.progress-steps-dark {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.progress-steps-dark .progress-item {
-  position: relative;
-  width: 20px;
-  height: 20px;
-  border: 2px white solid;
-  background-color: #cf7340;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-.progress-steps-dark::after {
-  content: "";
-  position: absolute;
-  height: 2px;
-  background-color: #cf7340;
-  top: 50%;
-  left: 0;
-  right: 0;
-  z-index: 0;
-}
-
-.progress-steps-dark .progress-item.finish:after {
-  position: absolute;
-  content: "";
-  height: 20px;
-  width: 20px;
-  top: -2px;
-  left: -2px;
-  border-radius: 50%;
-  background-color: #cf7340;
-  z-index: -1;
 }
 
 @media (max-width: 992px) {

@@ -1,0 +1,88 @@
+.progress-steps{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .progress-item{
+        position: relative;
+        width: 20px;
+        height: 20px;
+        border: 2px white solid;
+        background-color: $primary ;
+        border-radius: 50%;
+        z-index: 1;
+    }
+}
+.progress-steps::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: #eaf0ed;
+    top: 50%;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+.progress-steps .progress-item.active:after {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    background-color: #eaf0ed;
+}
+.progress-steps .progress-item.finish:after {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    top: -2px;
+    left: -2px;
+    border-radius: 50%;
+    background-color: #eaf0ed;
+    z-index: -1;
+}
+.progress-steps-dark{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .progress-item{
+        position: relative;
+        width: 20px;
+        height: 20px;
+        border: 2px white solid;
+        background-color: $primary ;
+        border-radius: 50%;
+        z-index: 1;
+    }
+}
+.progress-steps-dark::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: $primary;
+    top: 50%;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+.progress-steps-dark .progress-item.finish:after {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    top: -2px;
+    left: -2px;
+    border-radius: 50%;
+    background-color: $primary;
+    z-index: -1;
+}
+.fa-check{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}

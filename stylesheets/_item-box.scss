@@ -1,0 +1,46 @@
+.item-box{
+    position: relative;
+    .item-tag{
+        position: absolute;
+        writing-mode: vertical-rl;
+        top: 0px;
+        left: 20px;
+        font-weight: bold;
+        letter-spacing: 0.5rem;
+        background-color: $primary;
+    }
+    .item-tag-hot{
+        position: absolute;
+        writing-mode: vertical-rl;
+        top: 0px;
+        left: 20px;
+        font-weight: bold;
+        letter-spacing: 0.5rem;
+        background-color:red;
+    }
+    .item-tag-new{
+        position: absolute;
+        writing-mode: vertical-rl;
+        top: 0px;
+        left: 20px;
+        font-weight: bold;
+        letter-spacing: 0.5rem;
+        background-color:greenyellow;
+    }
+}
+.item-box-name{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 1.25rem;
+}
+.item-favorite{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: $primary;
+    cursor: pointer;
+}
+.item-box-img{
+    height: 15rem;
+    width: 100%;
+}
