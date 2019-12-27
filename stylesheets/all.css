@@ -13343,7 +13343,7 @@ a.text-accent:hover, a.text-accent:focus {
   left: 20px;
   font-weight: bold;
   letter-spacing: 0.5rem;
-  background-color: red;
+  background-color: #cf7340;
 }
 
 .item-box .item-tag-new {
@@ -13355,7 +13355,7 @@ a.text-accent:hover, a.text-accent:focus {
   left: 20px;
   font-weight: bold;
   letter-spacing: 0.5rem;
-  background-color: greenyellow;
+  background-color: #cf7340;
 }
 
 .item-box-name {
@@ -13484,6 +13484,10 @@ a.text-accent:hover, a.text-accent:focus {
         -ms-writing-mode: lr-tb;
             writing-mode: horizontal-tb;
   }
+  .cart-item .cart-border {
+    border-top: 1px rgba(0, 0, 0, 0.125) solid;
+    border-bottom: 1px rgba(0, 0, 0, 0.125) solid;
+  }
 }
 
 @media (max-width: 768px) {
@@ -13495,10 +13499,6 @@ a.text-accent:hover, a.text-accent:focus {
   }
   .header-menu {
     margin-top: 0px;
-  }
-  .cart-item .cart-border {
-    border-top: 1px rgba(0, 0, 0, 0.125) solid;
-    border-bottom: 1px rgba(0, 0, 0, 0.125) solid;
   }
 }
 /*# sourceMappingURL=all.css.map */

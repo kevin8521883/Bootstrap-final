@@ -16,7 +16,7 @@
         left: 20px;
         font-weight: bold;
         letter-spacing: 0.5rem;
-        background-color:red;
+        background-color:$primary;
     }
     .item-tag-new{
         position: absolute;
@@ -25,7 +25,7 @@
         left: 20px;
         font-weight: bold;
         letter-spacing: 0.5rem;
-        background-color:greenyellow;
+        background-color:$primary;
     }
 }
 .item-box-name{
